@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Breweries from '../Breweries/Breweries'
-import Form from '../Form/Form'
+import AddBrewery from '../AddBrewery/AddBrewery'
 
 class App extends Component {
   constructor() {
@@ -27,8 +27,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Brewery Finder</h1>
-        <Form addBrewery={this.addBrewery}/>
+        <h1>Beer Me</h1>
+        <AddBrewery addBrewery={this.addBrewery}/>
         <Breweries breweryData={this.state.breweryData}/>
       </>
     )

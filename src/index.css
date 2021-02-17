@@ -1,3 +1,10 @@
+/* COLORS:
+white: #D2D8D9;
+light orange: #A65D05;
+medium orange: #8C4303;
+dark orange: #732C02;
+black: #0D0D0D; */
+
 html {
   background: url(images/beer-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Form.css'
+import './AddBrewery.css'
 
 class From extends Component {
   constructor() {
@@ -30,13 +30,19 @@ class From extends Component {
   }
 
   clearInputs = () => {
-    this.setState({ name: '', brewery_type: '', city: '', state: '', website_url: '' })
+    this.setState({
+      name: '',
+      brewery_type: '',
+      city: '',
+      state: '',
+      website_url: ''
+    })
   }
 
   render() {
     return (
       <>
-        <h2>Add A Brewery</h2>
+        <h2 className="add-brewery-h2">Add A Brewery</h2>
         <form>
           <input
             type='text'
