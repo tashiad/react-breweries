@@ -9,10 +9,10 @@ const Breweries = ({ breweryData }) => {
         id={brewery.id}
         key={brewery.id}
         name={brewery.name}
-        type={brewery.brewery_type}
+        brewery_type={brewery.brewery_type}
         city={brewery.city}
         state={brewery.state}
-        site={brewery.website_url}
+        website_url={brewery.website_url}
       />
     )
   })

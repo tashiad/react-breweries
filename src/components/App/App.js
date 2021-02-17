@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Breweries from '../Breweries/Breweries'
+import Form from '../Form/Form'
 
 class App extends Component {
   constructor() {
@@ -17,10 +18,17 @@ class App extends Component {
     .catch(error => console.log(error))
   }
 
+  addBrewery = (newBrewery) => {
+    this.setState({
+      breweryData: [...this.state.breweryData, newBrewery]
+    })
+  }
+
   render() {
     return (
       <>
         <h1>Brewery Finder</h1>
+        <Form addBrewery={this.addBrewery}/>
         <Breweries breweryData={this.state.breweryData}/>
       </>
     )
